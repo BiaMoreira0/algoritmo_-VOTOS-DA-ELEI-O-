@@ -1,0 +1,25 @@
+  Algoritmo _ "VOTOS-DA-ELEIÇÃO"
+  var n1, n2, n3, soma, percb, percn, percv: real
+  inicio
+   ESCREVAL ("Digite a quantidade de votos em branco:")
+    LEIA(n1)
+   ESCREVAL ("Digite a quantidade de votos nulos:")
+    LEIA(n2)
+   ESCREVAL ("Digite a quantidade de votos válidos")
+    LEIA(n3)
+ soma <- n1+n2+n3
+   ESCREVAL ("O total dos votos da eleição:", soma)
+ percb<- (100*n1 / soma)
+ percn<- (100*n2 / soma)
+ percv<- (100*n3 / soma)
+   ESCREVAL (" O percentual de votos em branco:", (percb), "%")
+   ESCREVAL (" O percentual de votos nulos: ", (percn), "%")
+   ESCREVAL (" O percentual de votos válidos: ", (percv),"%")
+ 
+   SE n3 > n1+n2 ENTAO
+   ESCREVAL ("SOMA DOS VOTOS VÁLIDOS MAIOR QUE BRANCOS E NULOS")
+   SENAO
+   ESCREVAL ("SOMA DOS BRANCOS E NULOS ULTRAPASSA OS VÁLIDOS")
+   FIMSE
+ 
+  fimalgoritmo
